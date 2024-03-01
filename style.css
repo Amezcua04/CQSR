@@ -1,0 +1,12 @@
+.card-img-top,
+.img-thumbnail img {
+    object-fit: cover;
+    object-position: 15%;
+    /* Centra el contenido de la imagen */
+    height: 300px;
+    /* Ajusta la altura como desees */
+}
+
+.img-thumbnail {
+    width: 150px;
+}
