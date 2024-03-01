@@ -10,3 +10,37 @@
 .img-thumbnail {
     width: 150px;
 }
+
+/* Estilo para las viñetas */
+.custom-list {
+    list-style-type: none;
+    padding-left: 20px;
+    /* Espacio entre el borde de la viñeta y el texto */
+    color: #fff;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 20px;
+    /* Espacio entre el borde de la viñeta y el contenido del ítem */
+    margin-bottom: 10px;
+    /* Espacio entre los ítems de la lista */
+}
+
+.custom-list li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 12px;
+    /* Diámetro de la viñeta */
+    height: 12px;
+    /* Diámetro de la viñeta */
+    background-color: #6DDB56;
+    /* Color de fondo de la viñeta */
+    border-radius: 50%;
+    /* Hace la viñeta redonda */
+}
