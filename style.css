@@ -78,6 +78,17 @@
 }
 
 /* Cards Pricing */
+
+.span-styled {
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px 25px;
+    margin: 10px -26px;
+    width: 160px;
+    font-weight: 700;
+}
+
 .overlay {
     position: relative;
     background-color: #fff;
