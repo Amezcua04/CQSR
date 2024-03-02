@@ -9,6 +9,8 @@
 
 .img-thumbnail {
     width: 150px;
+    height: 150px;
+    border-style: none;
 }
 
 /* Estilo para las viñetas */
