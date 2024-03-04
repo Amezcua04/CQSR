@@ -1,10 +1,13 @@
 /* Navbar */
 /* Navbar */
 .navbar {
-    background-color: #fff;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.30), rgba(255, 255, 255, 0));
+    /* backdrop-filter: blur(3px); */
     height: 85px;
     margin: 20px;
     border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     padding: 0.5rem;
 }
 
@@ -64,6 +67,10 @@
 }
 
 @media (min-width: 991px) {
+
+    .navbar{
+        backdrop-filter: blur(3px);
+    }
     .nav-link::before {
         content: "";
         position: absolute;
@@ -84,6 +91,7 @@
     }
 }
 
+/* Imagenes */
 .card-img-top,
 .img-thumbnail img {
     object-fit: cover;
