@@ -1,7 +1,8 @@
 /* Navbar */
+/* Navbar */
 .navbar {
     background: rgb(24, 36, 107);
-    background: linear-gradient(90deg, rgba(24, 36, 107, 0.8313376375941002) 35%, rgba(24, 36, 107, 0.8313376375941002) 100%);
+    background: linear-gradient(90deg, rgba(24, 36, 107, 0.8313376375941002) 35%, rgba(24, 36, 107, 0.8313376375941002) 35%);
     height: 85px;
     margin: 20px;
     border-radius: 16px;
@@ -12,7 +13,7 @@
 
 .navbar-brand {
     font-weight: 500px;
-    color: #009970;
+    color: #6DDB56;
     font-size: 24px;
     transition: 0.3s color;
 
@@ -49,25 +50,25 @@
     position: relative;
 }
 
-.nav-link:visited {
-    color: #fff;
-}
-
 .nav-link:hover,
 .nav-link.active {
-    color: #9be7fa;
+    color: #9BE7FA;
 }
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: #9be7fa;
+    color: #9BE7FA;
+}
+
+.nav-link:visited{
+    color: #fff;
 }
 
 @media (max-width: 992px) {
 
     .offcanvas {
         background: rgb(24, 36, 107);
-        background: linear-gradient(90deg, rgba(24, 36, 107, 0.8313376375941002) 35%, rgba(24, 36, 107, 0.8313376375941002) 100%);
+        background: linear-gradient(90deg, rgba(24, 36, 107, 1) 35%, rgba(24, 36, 107, 1) 100%);
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.18);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -82,12 +83,9 @@
     }
 
     .nav-link:hover {
-        color: #9be7fa;
+        color: #9BE7FA;
     }
 
-    .nav-link:visited {
-        color: #fff;
-    }
 }
 
 @media (min-width: 991px) {
@@ -100,7 +98,7 @@
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #9be7fa;
+        background-color: #9BE7FA;
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }
@@ -247,8 +245,6 @@
 /* Estilos para tamaños de pantalla grandes (por defecto) */
 .card {
     max-width: 999px;
-    border-radius: unset;
-    border: unset;
 }
 
 .span-customize {
@@ -269,25 +265,21 @@
     .overlay {
         width: 350px;
         /* Modificar el ancho para dispositivos de tamaño pequeño */
-        height: 200px;
+        /* height: 150px; */
         /* Modificar el alto para dispositivos de tamaño pequeño */
         translate: -55px 0;
-    }
-
-    .overlay .span-customize {
-        padding-bottom: 15px;
     }
 }
 
 /* Media query para dispositivos de tamaño pequeño (teléfonos, por ejemplo) */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     .card-title h5 {
         font-size: 25px;
     }
 
     .card {
-        max-width: 440px;
+        max-width: 725px;
     }
 
     .overlay {
