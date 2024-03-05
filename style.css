@@ -66,8 +66,8 @@
 @media (max-width: 992px) {
 
     .offcanvas {
-        background: rgb(0, 212, 255);
-        background: linear-gradient(90deg, rgba(0, 212, 255, 0.8313376375941002) 35%, rgba(0, 212, 255, 1) 100%);
+        background: rgb(24, 36, 107);
+        background: linear-gradient(90deg, rgba(24, 36, 107, 0.8313376375941002) 35%, rgba(24, 36, 107, 0.8313376375941002) 100%);
         border-radius: 16px;
         border: 1px solid rgba(255, 255, 255, 0.18);
         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -82,9 +82,12 @@
     }
 
     .nav-link:hover {
-        color: #f6f6f6;
+        color: #9be7fa;
     }
 
+    .nav-link:visited {
+        color: #fff;
+    }
 }
 
 @media (min-width: 991px) {
