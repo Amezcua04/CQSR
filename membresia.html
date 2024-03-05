@@ -17,21 +17,26 @@
         href='https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel="stylesheet" href="style.css">
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.1.0/uicons-brands/css/uicons-brands.css'>
 
 </head>
 
 <body>
     <!-- Navbar con imagen -->
     <nav class="navbar navbar-expand-lg fixed-top">
-        <div class="container glass">
+        <div class="container">
             <a class="navbar-brand me-auto" href="#">
                 <img src="images/salud365_5.png" alt="Logo" width="80" height="80"
                     class="d-inline-block align-text-top">
             </a>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
+                aria-labelledby="offcanvasNavbarLabel" style="width: 300px;">
                 <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+                    <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5> -->
+                    <a class="offcanvas-title" id="offcanvasNavbarLabel" href="#">
+                        <img src="images/salud365_5.png" alt="Logo" width="80" height="80"
+                            class="d-inline-block align-text-top">
+                    </a>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -55,7 +60,10 @@
                     </ul>
                 </div>
             </div>
-            <a href="https://wa.me/3114000218" class="contactus-button">Contactanos</a>
+            <a href="https://wa.me/3114000218" class="contactus-button" style="display: flex; align-items: center; justify-content: center;">
+                <i class="fi fi-brands-whatsapp px-2" style="font-size: 20px;"></i>Contactanos
+              </a>
+              
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
