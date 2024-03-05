@@ -97,6 +97,11 @@
 }
 
 /* Imagenes */
+
+.card-title{
+    font-size: 36px;
+}
+
 .card-img-top,
 .img-thumbnail img {
     object-fit: cover;
@@ -233,6 +238,9 @@
 /* Media query para dispositivos de tamaño medio (tabletas, por ejemplo) */
 @media (max-width: 992px) {
 
+    .card-title {
+        font-size: 34px;
+    }
     .card {
         max-width: 825px;
     }
@@ -249,6 +257,9 @@
 /* Media query para dispositivos de tamaño pequeño (teléfonos, por ejemplo) */
 @media (max-width: 768px) {
 
+    .card-title h5 {
+        font-size: 25px;
+    }
     .card {
         max-width: 725px;
     }
