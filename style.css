@@ -1,4 +1,14 @@
-/* Navbar */
+/* Root */
+@font-face {
+  font-family: 'MADE Tommy Soft';
+  src: url('fonts/MADE_Tommy_Soft_Regular.otf') format('truetype'); /* Ajusta la ruta según tu estructura de carpetas */
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    font-family: 'MADE Tommy Soft', sans-serif; /* Utiliza el nombre que especificaste en font-family */
+  }
 /* Navbar */
 .navbar {
     background: rgb(24, 36, 107);
@@ -245,6 +255,8 @@
 /* Estilos para tamaños de pantalla grandes (por defecto) */
 .card {
     max-width: 999px;
+    border-radius: 0;
+    border-style: unset;
 }
 
 .span-customize {
@@ -317,6 +329,11 @@ footer a {
 
 footer a:hover {
     color: #9BE7FA;
+}
+
+footer ol,
+footer ul {
+  padding-left: 0.5rem;
 }
 
 .bgc-black {
