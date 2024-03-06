@@ -60,7 +60,7 @@
     color: #9BE7FA;
 }
 
-.nav-link:visited{
+.nav-link:visited {
     color: #fff;
 }
 
@@ -293,4 +293,225 @@
     .overlay .span-customize {
         padding-bottom: 15px;
     }
+}
+
+/* Footer */
+.custom-list-footer,
+.custom-list-footer li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+footer a:hover {
+    color: #9BE7FA;
+}
+
+.bgc-black {
+    background: rgb(24, 36, 107);
+}
+
+.bgc-gradient {
+    background: linear-gradient(90deg, rgba(24, 36, 107, 0.8313376375941002) 35%, rgba(24, 36, 107, 0.8313376375941002) 35%);
+}
+
+.color-primary {
+    color: rgb(24, 36, 107);
+}
+
+.footer-area .widget-title {
+    font-size: 22px;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.footer-area .widget-title:before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 30px;
+    bottom: 0;
+    left: 0;
+    background: #9BE7FA;
+}
+
+.footer-area .widget {
+    margin-bottom: 50px;
+}
+
+.footer-area .widget .title {
+    font-size: 22px;
+}
+
+.footer-area.text-white a,
+.footer-area.text-white p {
+    opacity: 0.8;
+    font-size: 15px;
+}
+
+.footer-area.text-white a:hover {
+    opacity: 1;
+}
+
+.footer-area .more-info .number {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: -5px;
+    display: inline-block;
+}
+
+.footer-area .more-info .number:not(:hover) {
+    color: #9BE7FA;
+}
+
+.footer-area .widget_nav_menu li:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.footer-area .widget_nav_menu li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer-area .widget_nav_menu li a:before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    margin-bottom: 2px;
+    margin-right: 13px;
+    border-radius: 50%;
+    background: #000;
+}
+
+.footer-area .widget_nav_menu li a:hover:before {
+    background: #9BE7FA;
+}
+
+.footer-area li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.5;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.footer-area li:not(:last-child) {
+    margin-bottom: 22px;
+}
+
+.footer-area li .icon {
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-right: 1px;
+    margin-right: 15px;
+    width: 42px;
+    height: 42px;
+    background: #9BE7FA;
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.footer-area li .icon i {
+    color: #fff;
+}
+
+.footer-area li .content span {
+    font-size: 15px;
+    display: block;
+    opacity: 0.5;
+}
+
+.footer-area li .content b,
+.footer-area li .content b a {
+    opacity: 1;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.footer-area .footer-bottom {
+    text-align: center;
+    
+    padding-bottom: 10px;
+}
+
+.footer-area .footer-bottom p {
+    margin: 0;
+}
+
+.social-style-one {
+    font-size: 15px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+}
+
+.social-style-one a {
+    opacity: 0.8;
+    color: #fff;
+    width: 42px;
+    height: 42px;
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 42px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    padding-top: 3px;
+}
+
+.social-style-one a:hover {
+    opacity: 1;
+    color: #fff;
+}
+
+.social-style-one a:not(:first-child) {
+    margin-left: 5px;
+}
+
+.social-style-one a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.social-style-one a:nth-child(1):hover {
+    background-color: #1877F2; /* Primer enlace */
+}
+
+.social-style-one a:nth-child(2):hover {
+    background-color: #000; /* Segundo enlace */
+}
+
+.social-style-one a:nth-child(3):hover {
+    background-color: #BC2A8D; /* Tercer enlace */
+}
+
+.social-style-one a:nth-child(4):hover {
+    background-color: #FF0000; /* Cuarto enlace */
 }
