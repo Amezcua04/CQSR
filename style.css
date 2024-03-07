@@ -36,7 +36,7 @@ body {
     background-color: #6DDB56;
     color: #fff;
     font-size: 14px;
-    padding: 8px 13px;
+    padding: 8px;
     border-radius: 50px;
     text-decoration: none;
     transition: 0.3s background-color;
@@ -49,6 +49,7 @@ body {
 .navbar-toggler {
     border: none;
     font-size: 1.25rem;
+    padding: 5px;
 }
 
 .navbar-toggler:focus,
