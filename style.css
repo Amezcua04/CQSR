@@ -270,7 +270,7 @@ body {
 @media (max-width: 992px) {
 
     .card-title {
-        font-size: 34px;
+        font-size: 32px;
     }
 
     .card {
@@ -284,13 +284,17 @@ body {
         /* Modificar el alto para dispositivos de tamaño pequeño */
         translate: -55px 0;
     }
+
+    .swiper-navBtn {
+        display: none;
+    }
 }
 
 /* Media query para dispositivos de tamaño pequeño (teléfonos, por ejemplo) */
-@media (max-width: 768px) {
+@media (max-width: 520px) {
 
-    .card-title h5 {
-        font-size: 25px;
+    .card-title{
+        font-size: 39px;
     }
 
     .card {
