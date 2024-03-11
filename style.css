@@ -139,6 +139,7 @@ body {
     /* Centra el contenido de la imagen */
     height: 300px;
     /* Ajusta la altura como desees */
+    border-radius: 15px 15px 0 0;
 }
 
 .img-thumbnail {
