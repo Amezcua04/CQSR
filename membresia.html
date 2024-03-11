@@ -252,9 +252,9 @@
                 <div class="row mt-5">
                     <div class="col-md-12 text-center" style="font-size: 10px; color: #e3f2fd;">
                         <p>Los beneficios finales se especifican en su contrato y varían de acuerdo al tipo de membresía
-                            contratada. <a href="#" style="text-decoration: none;">beneficios</a>,
+                            contratada. Consulte los beneficios,
                             <a href="#" style="text-decoration: none;" data-bs-toggle="modal"
-                                data-bs-target="#ModalTerminos">términos y condiciones</a> de nuestras membresías.
+                            onclick="openPDF('terminos')">términos y condiciones</a> de nuestras membresías.
                         </p>
                     </div>
                 </div>
@@ -468,8 +468,7 @@
                         <i class="fi fi-ss-asterik"
                             style="margin: 0 5px 0 20px; color: #9BE7FA; font-size: 6px;"></i><span>Los 4 beneficiarios
                             incluyen al titular. Precios sujetos a cambios sin previo aviso. Precios incluyen IVA.
-                            Consulte los <a href="#" style="text-decoration: none;">beneficios</a>,
-                            <!-- Button trigger modal -->
+                            Consulte los beneficios,
                             <a href="#" style="text-decoration: none;" data-bs-toggle="modal"
                                 onclick="openPDF('terminos')">términos y condiciones</a> de nuestras
                             membresías.</span>
@@ -755,23 +754,6 @@
             </div>
         </div>
     </div>
-    <script>
-        function openPDF(pdfUrl) {
-            // Verificar si estamos en un dispositivo móvil
-            const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-
-            if (isMobileDevice) {
-                // Si estamos en un dispositivo móvil, abrir el PDF en una nueva pestaña
-                window.open('assets/uploads/' + pdfUrl +'.pdf', '_blank');
-            } else {
-                // Si no estamos en un dispositivo móvil, abrir el modal con el PDF
-                // Validación de que modal se mostrará
-                pdfUrl === 'terminos' ? $('#Modal' + pdfUrl).modal('show') : null;
-                pdfUrl === 'premium' ? $('#Modal' + pdfUrl).modal('show') : null;
-                pdfUrl === 'basico' ? $('#Modal' + pdfUrl).modal('show') : null;
-            }
-        }
-    </script>
 
     <!-- Modal Beneficios Membresia Premium -->
     <div class="modal fade" id="Modalpremium" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
@@ -810,6 +792,25 @@
             </div>
         </div>
     </div>
+    
+    <!-- Script para modales -->
+    <script>
+        function openPDF(pdfUrl) {
+            // Verificar si estamos en un dispositivo móvil
+            const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            if (isMobileDevice) {
+                // Si estamos en un dispositivo móvil, abrir el PDF en una nueva pestaña
+                window.open('assets/uploads/' + pdfUrl +'.pdf', '_blank');
+            } else {
+                // Si no estamos en un dispositivo móvil, abrir el modal con el PDF
+                // Validación de que modal se mostrará
+                pdfUrl === 'terminos' ? $('#Modal' + pdfUrl).modal('show') : null;
+                pdfUrl === 'premium' ? $('#Modal' + pdfUrl).modal('show') : null;
+                pdfUrl === 'basico' ? $('#Modal' + pdfUrl).modal('show') : null;
+            }
+        }
+    </script>
 
 </body>
 <!-- Swiper JS -->
