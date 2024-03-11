@@ -252,8 +252,10 @@
                 <div class="row mt-5">
                     <div class="col-md-12 text-center" style="font-size: 10px; color: #e3f2fd;">
                         <p>Los beneficios finales se especifican en su contrato y varían de acuerdo al tipo de membresía
-                            contratada. <a href="#" style="text-decoration: none;">beneficios</a>, 
-                            <a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#ModalTerminos">términos y condiciones</a> de nuestras membresías.</p>
+                            contratada. <a href="#" style="text-decoration: none;">beneficios</a>,
+                            <a href="#" style="text-decoration: none;" data-bs-toggle="modal"
+                                data-bs-target="#ModalTerminos">términos y condiciones</a> de nuestras membresías.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -407,7 +409,8 @@
                                             </div>
                                             <div class="card-title text-center">
                                                 <a href="#" class="btn"
-                                                    style="background-color: #fff; color: #06C7F9; border-style: none; font-weight: 700;" data-bs-toggle="modal" data-bs-target="#ModalPremium">Ver
+                                                    style="background-color: #fff; color: #06C7F9; border-style: none; font-weight: 700;"
+                                                    data-bs-toggle="modal" onclick="openPDF('premium')">Ver
                                                     detalles</a>
                                             </div>
                                         </div>
@@ -447,7 +450,8 @@
                                             </div>
                                             <div class="card-title text-center">
                                                 <a href="#" class="btn"
-                                                    style="background-color: #fff; color: #6DDB56; border-style: none; font-weight: 700;" data-bs-toggle="modal" data-bs-target="#ModalBasica">Ver
+                                                    style="background-color: #fff; color: #6DDB56; border-style: none; font-weight: 700;"
+                                                    data-bs-toggle="modal" onclick="openPDF('basico')">Ver
                                                     detalles</a>
                                             </div>
                                         </div>
@@ -466,7 +470,8 @@
                             incluyen al titular. Precios sujetos a cambios sin previo aviso. Precios incluyen IVA.
                             Consulte los <a href="#" style="text-decoration: none;">beneficios</a>,
                             <!-- Button trigger modal -->
-                            <a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#ModalTerminos">términos y condiciones</a> de nuestras
+                            <a href="#" style="text-decoration: none;" data-bs-toggle="modal"
+                                onclick="openPDF('terminos')">términos y condiciones</a> de nuestras
                             membresías.</span>
                     </div>
                 </div>
@@ -733,59 +738,76 @@
     <!-- Modales -->
 
     <!-- Modal Términos y Condiciones -->
-    <div class="modal fade" id="ModalTerminos" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal fade" id="Modalterminos" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-m">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="pdfModalLabel">Términos y Condiciones</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfModalLabel">Términos y Condiciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Aquí se incrustará el PDF -->
+                    <iframe src="assets/uploads/terminos.pdf" style="width: 100%; height: 70vh; border: none;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <!-- Aquí se incrustará el PDF -->
-              <iframe src="assets/uploads/terminos.pdf" style="width: 100%; height: 70vh; border: none;"></iframe>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
         </div>
     </div>
+    <script>
+        function openPDF(pdfUrl) {
+            // Verificar si estamos en un dispositivo móvil
+            const isMobileDevice = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            if (isMobileDevice) {
+                // Si estamos en un dispositivo móvil, abrir el PDF en una nueva pestaña
+                window.open('assets/uploads/' + pdfUrl +'.pdf', '_blank');
+            } else {
+                // Si no estamos en un dispositivo móvil, abrir el modal con el PDF
+                // Validación de que modal se mostrará
+                pdfUrl === 'terminos' ? $('#Modal' + pdfUrl).modal('show') : null;
+                pdfUrl === 'premium' ? $('#Modal' + pdfUrl).modal('show') : null;
+                pdfUrl === 'basico' ? $('#Modal' + pdfUrl).modal('show') : null;
+            }
+        }
+    </script>
 
     <!-- Modal Beneficios Membresia Premium -->
-    <div class="modal fade" id="ModalPremium" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal fade" id="Modalpremium" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-m">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="pdfModalLabel">Beneficions Membresía Premium</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfModalLabel">Beneficions Membresía Premium</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Aquí se incrustará el PDF -->
+                    <iframe src="assets/uploads/premium.pdf" style="width: 100%; height: 70vh; border: none;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <!-- Aquí se incrustará el PDF -->
-              <iframe src="assets/uploads/premium.pdf" style="width: 100%; height: 70vh; border: none;"></iframe>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-            </div>
-          </div>
         </div>
     </div>
 
     <!-- Modal Beneficios Membresia Basica -->
-    <div class="modal fade" id="ModalBasica" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
+    <div class="modal fade" id="Modalbasico" tabindex="-1" aria-labelledby="pdfModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-m">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="pdfModalLabel">Beneficions Membresía Básica</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="pdfModalLabel">Beneficions Membresía Básica</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- Aquí se incrustará el PDF -->
+                    <iframe src="assets/uploads/basico.pdf" style="width: 100%; height: 70vh; border: none;"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
+                </div>
             </div>
-            <div class="modal-body">
-              <!-- Aquí se incrustará el PDF -->
-              <iframe src="assets/uploads/basico.pdf" style="width: 100%; height: 70vh; border: none;"></iframe>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Aceptar</button>
-            </div>
-          </div>
         </div>
     </div>
 
