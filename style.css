@@ -12,6 +12,10 @@ body {
     /* Utiliza el nombre que especificaste en font-family */
 }
 
+h1, h2, h3 {
+    font-weight: 700;
+}
+
 /* Navbar */
 .navbar {
     background: rgb(24, 36, 107);
@@ -186,6 +190,7 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    width: 137.06px;
 }
 
 .icon-background {
