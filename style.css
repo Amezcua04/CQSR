@@ -53,7 +53,7 @@ h3 {
 }
 
 .contactus-button i {
-    font-size: 20px; 
+    font-size: 20px;
     margin-top: 5px;
 }
 
@@ -136,6 +136,127 @@ h3 {
 
 
 }
+
+/* Primera Seccion */
+
+.icon-bg {
+    background-color: #6DDB56;
+    color: #fff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-bg img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-box {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* margin: 10px; */
+}
+
+.icon-box h4 {
+    margin-left: 10px;
+    text-align: justify;
+    width: 250px;
+    height: 80px;
+    font-size: 22px;
+    align-content: center;
+    color: #18246B;
+    font-weight: 700;
+}
+
+.gallery-img {
+    border-radius: 15px;
+    height: 150px;
+    width: 200px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .icon-bg i {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 5px;
+    }
+
+    .icon-bg {
+        height: 50px;
+        width: 50px;
+    }
+
+    .icon-bg img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .gallery-img {
+        height: 250px;
+        width: 350px;
+    }
+}
+
+/* Segunda sección */
+
+.txt-justify {
+    text-align: justify;
+}
+
+.image {
+    object-fit: cover;
+    object-position: 15%;
+    height: 460px;
+}
+
+.bg-salud365 {
+    background-color: #6DDB56;
+    color: #fff;
+    font-weight: 700;
+}
+
+.bg-salud365:hover {
+    background-color: #5EC24F; /* Color para hover */
+}
+
+.bg-salud365:visited {
+    background-color: #5BB74A; /* Color para selected */
+}
+
+.bg-salud365 img {
+    width: 15px;
+}
+
+@media (max-width: 768px) {
+    .image {
+        height: 330px;
+    }
+
+    .image img {
+        height: 380px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    
+    .image {
+        height: 360px;
+    }
+}
+
 
 /* Imagenes */
 
