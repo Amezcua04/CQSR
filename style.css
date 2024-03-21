@@ -23,8 +23,8 @@ h3 {
     background: rgb(24, 36, 107);
     background: linear-gradient(90deg, rgba(24, 36, 107, 0.8313376375941002) 35%, rgba(24, 36, 107, 0.8313376375941002) 35%);
     height: 85px;
-    margin: 20px;
-    border-radius: 16px;
+    margin: 2px;
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.27);
     padding: 0.5rem;
