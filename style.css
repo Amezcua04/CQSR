@@ -175,8 +175,8 @@ h3 {
 
 .gallery-img {
     border-radius: 15px;
-    height: 150px;
-    width: 200px;
+    height: 225px;
+    width: 400px;
     object-fit: cover;
 }
 
@@ -222,6 +222,10 @@ h3 {
     height: 460px;
 }
 
+.btn-esp {
+    margin-top: 60px;
+}
+
 .bg-salud365 {
     background-color: #6DDB56;
     color: #fff;
@@ -229,11 +233,13 @@ h3 {
 }
 
 .bg-salud365:hover {
-    background-color: #5EC24F; /* Color para hover */
+    background-color: #5EC24F;
+    /* Color para hover */
 }
 
 .bg-salud365:visited {
-    background-color: #5BB74A; /* Color para selected */
+    background-color: #5BB74A;
+    /* Color para selected */
 }
 
 .bg-salud365 img {
@@ -248,10 +254,14 @@ h3 {
     .image img {
         height: 380px !important;
     }
+
+    .btn-esp {
+        margin-top: 3px;
+    }
 }
 
 @media (max-width: 767px) {
-    
+
     .image {
         height: 360px;
     }
