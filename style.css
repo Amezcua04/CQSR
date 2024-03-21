@@ -180,7 +180,7 @@ h3 {
     object-fit: cover;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .icon-bg i {
         font-size: 30px;
     }
@@ -246,7 +246,7 @@ h3 {
     width: 15px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .image {
         height: 330px;
     }
@@ -267,27 +267,231 @@ h3 {
     }
 }
 
+/* Tercera Sección */
 
-/* Imagenes */
-
-.card-title {
-    font-size: 36px;
-}
-
-.card-img-top,
-.img-thumbnail img {
-    object-fit: cover;
-    object-position: 15%;
-    /* Centra el contenido de la imagen */
-    height: 300px;
-    /* Ajusta la altura como desees */
-    border-radius: 15px 15px 0 0;
-}
+/* Logos*/
 
 .img-thumbnail {
     width: 150px;
     height: 150px;
     border-style: none;
+}
+
+/* Cuarta Sección */
+
+/* Viñetas */
+
+.icon-bg-2 {
+    background-color: #6DDB56;
+    color: #fff;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-bg-2 img {
+    width: 40px;
+    height: 40px;
+}
+
+.text-wrapper {
+    display: table;
+    height: 40px;
+}
+
+.text-wrapper h4 {
+    display: table-header-group;
+    vertical-align: middle;
+    margin: 0; 
+    font-size: 30px; 
+    font-weight: 700;
+}
+
+.text-wrapper p {
+    display: table-footer-group;
+    vertical-align: middle;
+    line-height: 1; 
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+
+    .icon-bg-2 {
+        width: 60px;
+        height: 55px;
+    }
+
+    .icon-bg-2 img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .text-wrapper {
+        width: 90px;
+    }
+
+    .text-wrapper h4 {
+        font-size: 17px;
+    }
+
+    .text-wrapper p {
+        font-size: 8px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .icon-bg-2 {
+        width: 55px;
+        height: 50px;
+    }
+
+    .text-wrapper {
+        width: 90px;
+    }
+
+    .text-wrapper h4 {
+        font-size: 18px;
+    }
+
+    .text-wrapper p {
+        font-size: 11px;
+    }
+
+}
+
+/* Cards Pricing */
+.card {
+    max-width: 999px;
+    border-radius: 0;
+    border-style: unset;
+}
+
+.overlay {
+    position: relative;
+    background-color: #fff;
+    color: black;
+    padding: 15px 0 15px 15px;
+    border-radius: 10px;
+    width: 450px;
+    height: 250px;
+    translate: -25% 0;
+}
+
+.left-column,
+.right-column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay-logo {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.span-styled {
+    color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px 25px;
+    margin: 10px -26px;
+    width: 160px;
+    font-weight: 700;
+}
+
+.span-customize {
+    padding-bottom: 40px
+}
+
+.overlay-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Media query para dispositivos de tamaño medio (tabletas, por ejemplo) */
+@media (max-width: 992px) {
+
+    .contactus-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        width: 60px;
+        height: 60px;
+    }
+
+    .contactus-button i {
+        font-size: 30px;
+        padding-top: 5px;
+    }
+
+    .contactus-text {
+        display: none;
+    }
+
+    .icon-text {
+        width: 137.06px;
+    }
+
+    .card-title {
+        font-size: 32px;
+    }
+
+    .card {
+        max-width: 825px;
+    }
+
+    .overlay {
+        width: 350px;
+        height: 210px;
+        translate: -55px 0;
+    }
+
+    .overlay .span-customize {
+        padding-bottom: 15px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .card-title {
+        font-size: 39px;
+    }
+
+    .card {
+        max-width: 725px;
+    }
+
+    .overlay {
+        width: 350px;
+        /* Modificar el ancho para dispositivos de tamaño pequeño */
+        height: 200px;
+        /* Modificar el alto para dispositivos de tamaño pequeño */
+        translate: -55px 0;
+    }
+
+    .overlay .span-customize {
+        padding-bottom: 15px;
+    }
+
+    .swiper-navBtn {
+        display: none;
+    }
 }
 
 /* Estilo para las viñetas */
@@ -311,7 +515,7 @@ h3 {
 .custom-list li::before {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 0;
     transform: translateY(-50%);
     width: 12px;
@@ -354,166 +558,7 @@ h3 {
     /* Añade espacio entre el icono y el texto */
 }
 
-/* Cards Pricing */
 
-.span-styled {
-    color: white;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    padding: 2px 25px;
-    margin: 10px -26px;
-    width: 160px;
-    font-weight: 700;
-}
-
-.overlay {
-    position: relative;
-    background-color: #fff;
-    color: black;
-    padding: 15px 0 15px 15px;
-    /* margin-top: 0px; */
-    border-radius: 10px;
-    width: 450px;
-    height: 250px;
-    translate: -25% 0;
-}
-
-.left-column,
-.right-column {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.overlay-logo {
-    width: 100%;
-    /* Ajusta el ancho del logo según sea necesario */
-    height: 40px;
-    /* Ajusta la altura del logo según sea necesario */
-    margin-bottom: 10px;
-}
-
-.overlay-image {
-    width: 100%;
-    height: auto;
-}
-
-/* Estilos para tamaños de pantalla grandes (por defecto) */
-.card {
-    max-width: 999px;
-    border-radius: 0;
-    border-style: unset;
-}
-
-.span-customize {
-    padding-bottom: 40px
-}
-
-/* Media query para dispositivos de tamaño medio (tabletas, por ejemplo) */
-@media (max-width: 992px) {
-
-    .contactus-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        margin-bottom: 15px;
-        margin-right: 15px;
-        width: 60px;
-        height: 60px;
-    }
-
-    .contactus-button i {
-        font-size: 30px;
-        padding-top: 5px;
-    }
-
-    .contactus-text {
-        display: none;
-    }
-
-    .icon-text {
-        width: 137.06px;
-    }
-
-    .card-title {
-        font-size: 32px;
-    }
-
-    .card {
-        max-width: 825px;
-    }
-
-    .overlay {
-        width: 350px;
-        /* Modificar el ancho para dispositivos de tamaño pequeño */
-        height: 210px;
-        /* Modificar el alto para dispositivos de tamaño pequeño */
-        translate: -55px 0;
-    }
-
-    .overlay .span-customize {
-        padding-bottom: 15px;
-    }
-
-    .swiper-navBtn {
-        display: none;
-    }
-}
-
-/* Media query para dispositivos de tamaño pequeño (teléfonos, por ejemplo) */
-@media (max-width: 520px) {
-
-    .card-title {
-        font-size: 39px;
-    }
-
-    .card {
-        max-width: 725px;
-    }
-
-    .overlay {
-        width: 350px;
-        /* Modificar el ancho para dispositivos de tamaño pequeño */
-        height: 200px;
-        /* Modificar el alto para dispositivos de tamaño pequeño */
-        translate: -55px 0;
-    }
-
-    .overlay .span-customize {
-        padding-bottom: 15px;
-    }
-
-    .swiper-navBtn {
-        display: none;
-    }
-}
-
-@media (max-width: 390px) {
-
-    .card {
-        max-width: 390px;
-    }
-
-    .overlay {
-        width: 345px;
-        /* Modificar el ancho para dispositivos de tamaño pequeño */
-        height: 200px;
-        /* Modificar el alto para dispositivos de tamaño pequeño */
-        translate: -45px 0;
-    }
-
-    .overlay .span-customize {
-        padding-bottom: 15px;
-    }
-
-    .swiper-navBtn {
-        display: none;
-    }
-}
 
 /* Footer */
 .custom-list-footer,
